@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements MqttCallback{
 
     // connection default values
     private static final String BROKER_URI = "tcp://broker.hivemq.com:1883";
-    private static final String TOPIC = "mqtt4iotdemo";
+    private static final String TOPIC = "testtopic/1";
     private static final int QOS = 2;
 
     // user name for the chat
