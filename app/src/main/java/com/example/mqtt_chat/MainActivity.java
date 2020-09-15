@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements MqttCallback{
                 // we only publish if there is message to publish
                 if (!message.isEmpty()) {
 
-                    message = "<b>" + USER_NAME + "</b>: " + message + "<br/>";
+                    message = USER_NAME + " " + message +" ";
                     textMessage.setText("");
 
                     MqttMessage mqttMessage = new MqttMessage(message.getBytes());
